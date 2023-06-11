@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesar Coutino - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Cesar Coutino">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/parker.png" alt="Profile Image">
+        <h1>Cesar Coutino</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link2" href="chamber.html">Chamber</a></li>
+            <li><a class="nav-link" href="siteplan.html">Site Plan</a></li>
+            <li><a class="nav-link2" href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="section-title">WDD 230: Web Frontend Development</h2>
+        </section>
+
+        <div class="container">
+            <section class="card">
+                <h3 class="card-title">Learning Activities</h3>
+                <ul>
+                  <li><a href="#">Activity 1</a></li>
+                  <li><a href="#">Activity 2</a></li>
+                  <li><a href="#">Activity 3</a></li>
+                  <!-- Add more list items as needed -->
+                </ul>
+            </section>
+            <section class="card">
+                <h3 class="card-title">Information</h3>
+                <p>Weather: <span id="weather"></span></p>
+                <p>Number of visits: <span id="visits"></span></p>
+            </section> 
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Cesar Coutino, New York</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+</body>
+</html>

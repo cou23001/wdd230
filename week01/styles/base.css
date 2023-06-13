@@ -126,6 +126,7 @@ nav a:hover {
 
 .primary {
   background-color: var(--primary-color);
+  color: white;
 }
 .secondary {
   background-color: var(--secondary-color);

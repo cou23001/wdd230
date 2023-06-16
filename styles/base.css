@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #007bff; 
+    background-color: #004ba0; 
     padding: 20px;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@ header img {
 }
 
 nav {
-    background-color: #f0f0f0;
+    background-color: #FFFFFF;
     padding: 10px;
 }
 
@@ -45,7 +45,7 @@ nav ul li a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    color: #000;
+    color: #eaeaea;
 }
 
 .bullets {
@@ -63,10 +63,10 @@ nav ul li a {
 }
 
 .nav-link {
-    background-color: #8f8a8a;
+    background-color: #707070ff;
 }
 .nav-link2 {
-    background-color: #c7bfbf;
+    background-color: #001c3d;
 }
 
 .container {

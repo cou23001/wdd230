@@ -53,10 +53,13 @@ nav ul li a {
     padding: 10px;
 }
   
-  .bullets li {
+.bullets li {
     list-style-type: disc;
     padding-left: 10px; 
     margin-bottom: 10px;
+}
+.bullets li a {
+    text-decoration: none;
 }
 
 .nav-link {

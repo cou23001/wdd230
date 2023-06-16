@@ -5,6 +5,7 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
+    background-color: white;
 }
 
 header {
@@ -47,14 +48,20 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 10px;
-    text-decoration: none;
+    /*text-decoration: none;*/
     text-align: center;
     color: #eaeaea;
+}
+
+.alerts {
+    color: black;
 }
 
 .bullets {
     margin: 20px;
     padding: 20px;
+    background-color: #f0f0f0;
+    color: #000;
 }
   
 .bullets li {
@@ -62,15 +69,15 @@ nav ul li a {
     padding-left: 10px; 
     margin-bottom: 20px;
 }
-.bullets li a {
+.bullets a {
+    color: black;
     text-decoration: none;
+
 }
 
-.nav-link {
-    background-color: #707070ff;
-}
-.nav-link2 {
+.navlink {
     background-color: #001c3d;
+    text-decoration: none;
 }
 
 .container {
@@ -110,6 +117,7 @@ footer {
     background-color: #f0f0f0;
     padding: 8px;
     text-align: center;
+    color: #000;
 }
 .hamburger {
     display: none; 

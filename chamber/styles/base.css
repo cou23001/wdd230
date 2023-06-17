@@ -199,8 +199,8 @@ footer a {
     text-decoration: none;
 }
 footer p a:hover {
-    color: rgb(58, 83, 224);
-    text-decoration: underline;
+    color: rgb(241, 242, 247);
+    text-decoration: none;
 }
 .social {
     padding-top: 0px;

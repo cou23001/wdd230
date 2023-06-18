@@ -52,7 +52,7 @@ h2 {
 }
 
 hr {
-    height: 3px;
+    height: 15px;
     margin: 35px 0;
     background: var(--accent1-color);
 }
@@ -183,15 +183,14 @@ footer {
     padding: 10px 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--nav-background-color);
-    height: 60px;
-    font-family: var(--heading-font);
+    height: 180px;
+    font-family: var(--paragraph-font);
 }
 footer p {
-    font-size: 1em;
+    font-size: .7em;
     color: white;
 }    
 footer a {
@@ -202,6 +201,41 @@ footer p a:hover {
     color: rgb(241, 242, 247);
     text-decoration: none;
 }
+.footer-container {
+    display: grid;
+    grid-template-rows: auto auto; 
+}
+  
+.footer-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer-tcc {
+    display:inline;
+    align-items: center;
+    font-size: 1.1em;
+    color: white;
+}
+.footer-tcc {
+    margin-bottom: 10px;
+  }
+  
+  .footer-tcc:last-child {
+    margin-bottom: 0;
+  }
+  
+  .footer-tcc address {
+    font-style: normal;
+    margin-bottom: 5px;
+  }
+  
+  .footer-tcc span {
+    display: block;
+  }
+  
+  
+
 .social {
     padding-top: 0px;
 }

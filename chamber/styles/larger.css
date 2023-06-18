@@ -17,7 +17,7 @@
     }
 
     footer p {
-      font-size: 0.7em;
+      font-size: 0.5em;
     }
 
     .social img {
@@ -28,6 +28,10 @@
     ul {
       display: none; 
     }
+
+   .social {
+    display: none;
+   }
   
     nav ul.active {
       display: flex; 

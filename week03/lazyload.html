@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy loading</title>
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main class="main-section">
+        <picture>
+            <img src="images/sweet.jpg" alt="Sweet" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/fruit.jpg" alt="Fruits" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/mountains.jpg" alt="Mountains" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/metro.jpg" alt="Metro" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/flowers.jpg" alt="Flowers" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/giraffes.jpg" alt="Giraffes" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Mr C, New York</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+</body>
+</html>

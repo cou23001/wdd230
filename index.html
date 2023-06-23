@@ -38,6 +38,17 @@
         <div id="mode">
             ☑️
         </div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Hero Image" width="1500" height="750">
+            </picture>
+        </div>
+        <div class="hero-text">
+            <h1>Tucson Temple</h1>
+        </div>
+          
         <section>
             <h2 class="section-title">WDD 230: Web Frontend Development</h2>
         </section>
@@ -56,9 +67,12 @@
             </section>
             <section class="card">
                 <h3 class="card-title">Information</h3>
-                <p class="alerts">Weather: <span id="weather"></span></p>
+                <p class="alerts">Weather: <span id="weather">85 F Sunny</span></p>
                 <p class="alerts">Number of visits: <span id="visits"></span></p>
             </section> 
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122259.61928412326!2d-93.21197180183512!3d16.74614559138203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd85611d06e8f%3A0xdd78bd7b4662216a!2zVHV4dGxhIEd1dGnDqXJyZXosIENoaXMuLCBNw6l4aWNv!5e0!3m2!1ses!2sus!4v1687505151093!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
     <footer>

@@ -56,4 +56,22 @@
     .hamburger.active .bar:nth-child(3) {
       transform: rotate(-45deg) translate(5px, -5px);
     }
+
+    .grid-container {
+      grid-template-columns: 1fr; 
+    }
+  
+    .right-column {
+      grid-column: 1 / 1;
+      align-items: center; 
+      justify-content: center; 
+      gap: 20px; 
+    }
+
+    .left-column {
+      grid-column: 1 / 1;
+      align-items: center; 
+      justify-content: center; 
+      gap: 20px; 
+  }
 }

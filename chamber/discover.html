@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Tuxtla Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/10/Tuxtla_gutierrez_web.jpg">
+    <meta property="og:url" content="https://cou23001.github.io/wdd230/">
+    <meta property="og:type" content="https://cou23001.github.io/wdd230/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuxtla Chamber of Commerce</title>
+    <meta name="description" content="Tuxtla Chamber of Commerce">
+    <meta name="author" content="Cesar Coutino">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-chamber.png" alt="Chamber of Tuxtla"></a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>Tuxtla Chamber of Commerce</h1>
+          <p>Empowering Businesses, Enriching Communities</p>
+        </div>
+    </div> 
+    -->
+    <div class="sidebar">
+        <h2 id="message"></h2>
+    </div>
+
+    <div class="grid-container">
+        <div class="column left-column">
+          <div class="block">
+            <h2>Vibrant City Life in Tuxtla</h2>
+            <p>Tuxtla, a growing city in Mexico, boasts a diverse population, thriving economy, and vibrant cultural events throughout the year.</p>
+          </div>
+          <div class="block">
+            <h2>Economic Growth</h2>
+            <img id="bimg" src="images/economy.jpg" alt="Image Description">
+            <p>Tuxtla is experiencing significant economic growth, positioning itself as a thriving city in terms of economic development. Various sectors contribute to this growth, including industry, commerce, services, and tourism.</p>
+          </div>
+          <div class="block">
+            <h2>Calendar</h2>
+            <div class="group">
+                <div id="calendar"></div>
+            </div>       
+          </div>
+        </div>
+        <div class="column right-column">
+          <img src="images/city/tgz-park.webp" alt="Parque Central de Tuxtla Gutierrez" loading="lazy" width="95%">
+          <img src="images/city/sumidero.webp" alt="Cañón del Sumidero" loading="lazy" width="95%">
+          <img src="images/city/marimba.webp" alt="Parque de la Marimba" loading="lazy" width="95%">
+          <img src="images/city/museum.webp" alt="Museo de la Marimba" loading="lazy" width="95%">
+          <img src="images/city/zoo.webp" alt="Zoo MAT" loading="lazy" width="95%">
+          <img src="images/city/tgz.webp" alt="Tuxtla Gutierrez Aerial" loading="lazy" width="95%">
+        </div>
+      </div>
+      
+    </div>
+      
+      
+    <footer class="footer-container">
+        <div class="footer-tcc">
+            <address>
+                <span>2300 Speedway Boulevard</span>
+                <span>Tuxtla Gutierrez, CS</span>
+                <span>29000</span>
+                <span>info@chambertgz.org</span>
+                <span>(999) 123-4567</span>
+            </address>
+        </div>
+        <div class="footer-item">
+            <p>TCC &copy; <span id="currentYear"></span></p>
+            <p>Cesar A. Coutino</p>
+            <p>WDD 230 Project</p>
+            <p id="lastModified">Last modification</p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+</body>
+</html>

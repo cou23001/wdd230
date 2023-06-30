@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Tuxtla Chamber of Commerce">
+    <meta property="og:type" content="non_profit">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/10/Tuxtla_gutierrez_web.jpg">
+    <meta property="og:url" content="https://cou23001.github.io/wdd230/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Form</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Cesar Coutino">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <img src="images/parker.png" alt="The Image about Parker" width="50px" height="100%">
+        <h1>Cesar Coutino</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="navlink" href="index.html">Home</a></li>
+            <li><a class="navlink" href="chamber/index.html">Chamber</a></li>
+            <li><a class="navlink" href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a class="navlink" href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="mode">
+            ☑️
+        </div>
+        <h2>The Form</h2>
+        <form method="get" action="record.html">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" title="Password must be at least eight characters long and can only contain alphanumeric characters." required>
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span id="password-match-error" style="color: red; display: none;">Passwords do not match.</span>
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+@\x2D]+@byui\.edu$" title="Please enter a valid email address">
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="page-rating">Page Rating:</label>
+                <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1">
+                <output for="page-rating" id="rating-value">5</output>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+          
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Cesar Coutino, New York</p>
+        <p id="lastModified"></p>
+        <p id="message"></p>
+        <p id="visits"></p>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/burger.js"></script>
+</body>
+</html>

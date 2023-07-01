@@ -7,9 +7,11 @@ const lastModifiedParagraph = document.getElementById('lastModified');
 lastModifiedParagraph.textContent = 'Last modified: ' + document.lastModified;
 //lastModifiedParagraph.innerHTML = 'Last modified: ' + document.lastModified;
 
+/*
 flatpickr('#calendar', {
     inline: true
 });
+*/
 
 // Print the messages in the sidebar
 var currentDate = new Date();

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Tuxtla Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/10/Tuxtla_gutierrez_web.jpg">
+    <meta property="og:url" content="https://cou23001.github.io/wdd230/">
+    <meta property="og:type" content="https://cou23001.github.io/wdd230/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuxtla Chamber of Commerce</title>
+    <meta name="description" content="Tuxtla Chamber of Commerce">
+    <meta name="author" content="Cesar Coutino">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-chamber.png" alt="Chamber of Tuxtla"></a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="title">Application</h1>
+            <div class="membership-container">
+                <div class="membership-form">
+                    <form method="get" action="thankyou.html">
+                        <fieldset>
+                            <legend>Applicant</legend>
+                            <label class="top">First Name* <input type="text" id="fname" name="fname" required> </label>
+                            <label class="top">Last Name* <input type="text" id="lname" name="lname" required> </label>
+                            <label class="top">Title <input type="text" id="title" name="title" pattern="[A-Za-z -]{7,}" title="Please enter at least 7 characters consisting of alphabets, hyphens, and spaces"> </label>
+                            <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com" required> </label>
+                            <label class="top">Mobile* <input type="tel" id="phone" name="phone" placeholder="(123) 555-1234" required> </label>
+                            
+                            </fieldset>
+                        <fieldset>
+                            <legend>Organization</legend>
+                            <label class="top">Organization <input type="text" id="org" name="org" required> </label>
+                            <label class="top">Membership Level
+                                <select id="membership" name="membership">
+                                    <option value="NP Membership">NP Membership (No Fee)</option>
+                                    <option value="Bronze Membership">Bronze Membership</option>
+                                    <option value="Silver Membership">Silver Membership</option>
+                                    <option value="Gold Membership">Gold Membership</option>
+                                </select>
+                            </label>
+                    
+                            <label class="top">Business/Organization's Description
+                                <textarea class="top" id="description" name="description"></textarea>                    
+                            </label>
+                            <input type="hidden" name="timestamp" id="timestamp">
+                        </fieldset>
+                        <input type="submit" value="Send" class="submitBtn">
+                    </form>
+                </div>
+                <div class="membership-benefits">
+                    <h2>Membership Benefits</h2>
+                    <h3>NP Membership</h3>
+                    <ul class="benul">
+                        <li class="benli">No fee</li>
+                        <li class="benli">Access to member-only events</li>
+                        <li class="benli">Training workshops</li>
+                        <li class="benli">Online resources</li>
+                    </ul>
+                    <h3>Bronze Membership</h3>
+                    <ul class="benul">
+                        <li class="benli">Cost: $50 per year</li>                        
+                        <li class="benli">All benefits of NP Membership</li>
+                        <li class="benli">Featured listing on the website</li>
+                        <li class="benli">Discounted event tickets</li>
+                    </ul>
+                    <h3>Silver Membership</h3>
+                    <ul class="benul">
+                        <li class="benli">Cost: $100 per year</li>                        
+                        <li class="benli">All benefits of Bronze Membership</li>
+                        <li class="benli">Promotion on social media channels</li>
+                        <li class="benli">Priority access to workshops</li>
+                    </ul>
+                    <h3>Gold Membership</h3>
+                    <ul class="benul">
+                        <li class="benli">Cost: $200 per year</li>
+                        <li class="benli">All benefits of Silver Membership</li>
+                        <li class="benli">Exclusive advertising opportunities</li>
+                        <li class="benli">Special recognition at events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+      
+    <footer class="footer-container">
+        <div class="footer-tcc">
+            <address>
+                <span>2300 Speedway Boulevard</span>
+                <span>Tuxtla Gutierrez, CS</span>
+                <span>29000</span>
+                <span>info@chambertgz.org</span>
+                <span>(999) 123-4567</span>
+            </address>
+        </div>
+        <div class="footer-item">
+            <p>TCC &copy; <span id="currentYear"></span></p>
+            <p>Cesar A. Coutino</p>
+            <p>WDD 230 Project</p>
+            <p id="lastModified">Last modification</p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+</body>
+</html>

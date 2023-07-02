@@ -74,4 +74,10 @@
       justify-content: center; 
       gap: 20px; 
   }
+
+  .membership-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }

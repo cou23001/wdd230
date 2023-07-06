@@ -1,0 +1,24 @@
+{
+    "familyName" : "Parker",
+    "dateMoved" : "1990-01-01",
+    "numberPeople" : 5,
+    "visitedBishop" : true,
+    "active" : true,
+    "members" : [
+      {
+        "name" : "Peter",
+        "gender" : "M",
+        "birth" : "1999-01-01"
+      },
+      {
+        "name" : "John",
+        "gender" : "M",
+        "birth" : "2000-01-01"
+      },
+      {
+        "name" : "Louis",
+        "gender" : "F",
+        "birth" : "2002-01-01"
+      }
+    ]
+  }

@@ -1,0 +1,50 @@
+.container {
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+  
+.card {
+    background-color: #f1f1f1;
+    padding: 2px;
+    border-radius: 5px;
+    width: 220px;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+.card h2 {
+    color: blue;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.card h3 {
+    color: rgb(1, 1, 18);
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: -2px;
+    font-size: 12px;
+}
+  
+.card p {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+}
+  
+@media (max-width: 768px) {
+    #cards {
+      grid-template-columns: 1fr;
+    }
+}
+  

@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const currentTemp = document.querySelector('#weather');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('#figcaption');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=16.75&lon=-93.1167&appid=4a8dfd912f7300f5b84fbba2ec797ee8&units=imperial';
 
@@ -50,10 +49,7 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     currentTemp.innerHTML = `${data.main.temp}&deg;F - ${desc}`;
     
-    
-    //console.log(desc);
     weatherIcon.setAttribute('src',iconsrc);
     weatherIcon.setAttribute('alt',desc);
-    captionDesc.textContent = `${desc}`;
 }
 apiFetch();

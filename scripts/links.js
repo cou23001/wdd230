@@ -1,37 +1,37 @@
 const baseURL = "https://cou23001.github.io/wdd230/";
 const linksURL = "https://cou23001.github.io/wdd230/data/links.json";
-const currentWeek = document.querySelector('#current-week');
 
-async function apiFetch() {
-    try {
-        const response = await fetch(linksURL);
-        if (response.ok) {
-            const data = await response.json();
-            displayResults(data);
-        }
-        else {
-            throw Error(await response.text());
-        }
-    }
-    catch (error) {
-        console.log(error);
-    }
-}   
+const bulletsList = document.querySelector('.bullets');
 
-function displayResults(data) {
-    const displayWeeks = (weeks) => {
-        weeks.forEach((week) => {
-            currentWeek.innerHTML = ``;
-            /*
-            currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-            const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-            let desc = data.weather[0].description;
-            //console.log(desc);
-            weatherIcon.setAttribute('src',iconsrc);
-            weatherIcon.setAttribute('alt',desc);
-            captionDesc.textContent = `${desc}`;
-            */
+fetch(linksURL)
+    .then(response => response.json())
+    .then(data => displayLearningActivities(data.links))
+    .catch(error => console.log('Error:', error));
+
+function displayLearningActivities(links) {
+    links.forEach(link => {
+        const week = link.week;
+        const linkItems = link.links;
+
+        const listItem = document.createElement('li');
+        listItem.textContent = `${week}: `;
+
+        linkItems.forEach((item, index) => {
+            const url = item.url;
+            const title = item.title;
+
+            const linkElement = document.createElement('a');
+            linkElement.href = url;
+            linkElement.textContent = title;
+
+            if (index !== linkItems.length - 1) {
+                const separator = document.createTextNode(' | ');
+                listItem.appendChild(linkElement);
+                listItem.appendChild(separator);
+            } else {
+                listItem.appendChild(linkElement);
+            }
         });
-    }
+        bulletsList.appendChild(listItem);
+    });
 }
-apiFetch();

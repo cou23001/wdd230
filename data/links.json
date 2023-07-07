@@ -5,11 +5,7 @@
         "links": [
           {
             "url": "week01/holygrail.html",
-            "title": "HG Layout"
-          },
-          {
-            "url":"week01/media-query.html",
-            "title":"mQueries"
+            "title": "CSS Layout Review"
           }
         ]
       },
@@ -17,12 +13,12 @@
         "week": "Week 2",
         "links": [
           {
-            "url": "week02/holygrail.html",
-            "title": "HG Layout"
+            "url": "week02/design.html",
+            "title": "Design Principles"
           },
           {
-            "url":"week02/media-query.html",
-            "title":"mQueries"
+            "url":"week02/bom.html",
+            "title":"DOM Manipulation"
           }
         ]
       },
@@ -30,12 +26,54 @@
         "week": "Week 3",
         "links": [
           {
-            "url": "week03/holygrail.html",
-            "title": "HG Layout"
+            "url": "week03/images/landscape.webp",
+            "title": "WebP"
           },
           {
-            "url":"week03/media-query.html",
-            "title":"mQueries"
+            "url":"week03/lazyload.html",
+            "title":"Lazy Loading"
+          },
+          {
+            "url":"week03/reponsive-images.html",
+            "title":"Responsive Images"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "week04/images/combinators.png",
+            "title": "Combinator"
+          },
+          {
+            "url":"week04/tablebuild.html",
+            "title":"Tables"
+          },
+          {
+            "url":"week04/index.html",
+            "title":"HTML Forms"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "https://codepen.io/ccoutino/pen/zYMEqYV",
+            "title": "CSS Pseudo-elements"
+          },
+          {
+            "url":"week05/new-ward-members.json",
+            "title":"JSON"
+          },
+          {
+            "url":"week05/prophets.html",
+            "title":"The Fetch API"
+          },
+          {
+            "url":"week05/weather.html",
+            "title":"Consuming a Weather API"
           }
         ]
       }

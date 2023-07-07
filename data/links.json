@@ -12,6 +12,32 @@
             "title":"mQueries"
           }
         ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/holygrail.html",
+            "title": "HG Layout"
+          },
+          {
+            "url":"week02/media-query.html",
+            "title":"mQueries"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/holygrail.html",
+            "title": "HG Layout"
+          },
+          {
+            "url":"week03/media-query.html",
+            "title":"mQueries"
+          }
+        ]
       }
     ]
   }

@@ -54,6 +54,8 @@ nav ul li a {
 }
 
 .alerts {
+    display: flex;
+    align-items: center;
     color: black;
 }
 

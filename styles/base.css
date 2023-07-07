@@ -173,6 +173,7 @@ footer {
 	right: 1rem;
 	font-size: 2.0rem;
 	cursor: pointer;
+    color: white;
 }
 .map-container {
     display: flex;

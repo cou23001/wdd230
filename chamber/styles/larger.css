@@ -29,9 +29,9 @@
       display: none; 
     }
 
-   .social {
-    display: none;
-   }
+    .social {
+      display: none;
+    }
   
     nav ul.active {
       display: flex; 
@@ -73,11 +73,20 @@
       align-items: center; 
       justify-content: center; 
       gap: 20px; 
-  }
+    }
 
-  .membership-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
+    .membership-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .cards {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 10px;
+      gap: 10px;
+    }
 }

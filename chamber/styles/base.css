@@ -533,6 +533,7 @@ form label.top input:required:valid {
     padding: 10px;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .organization-info img {

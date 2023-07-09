@@ -15,12 +15,13 @@ function displayLearningActivities(links) {
 
         const listItem = document.createElement('li');
         listItem.textContent = `${week}: `;
+        console.log(listItem);
 
         linkItems.forEach((item, index) => {
             const url = item.url;
             const title = item.title;
 
-            const linkElement = document.createElement('a');
+            const linkElement = document.createElement(`a`);
             linkElement.href = url;
             linkElement.textContent = title;
 

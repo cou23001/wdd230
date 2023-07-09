@@ -505,4 +505,82 @@ form label.top input:required:valid {
 .benli {
     margin: 0;
 }
-  
+/* New Styles for Organization Info */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+.organization-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.organization-info img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.organization-info h1,h2,h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.organization-info p {
+    font-size: 15px;
+    color: #21139c;
+}
+
+.organization-info h1,
+.organization-info h2,
+.organization-info h3,
+.organization-info p {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.organization-info a {
+    color: #004ba0;
+    text-decoration: none;
+}
+
+#toggleButton {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.list-view, .organization-info p {
+    padding: 2px; 
+}

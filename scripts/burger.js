@@ -18,10 +18,12 @@ const ullia = document.querySelectorAll("ul li a");
 const footer = document.querySelector("footer");
 
 modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("☑️")) {
-		main.style.background = "#000";
+  if (modeButton.textContent.includes("☑️")) {
+    main.style.background = "#000";
 		main.style.color = "#fff";
 		modeButton.textContent = "❎";
+    modeButton.style.color = "white";
+    bulletsList.style.color = "white";
     cards.forEach((card) => {
       card.style.background = "#001c3d"; 
       card.style.color = "#fff"; 
@@ -38,7 +40,7 @@ modeButton.addEventListener("click", () => {
     footer.style.background = "#001C3D";
 	} else {
 		main.style.background = "#FFFFFF";
-		main.style.color = "#000";
+		//main.style.color = "red";
 		modeButton.textContent = "☑️";
     cards.forEach((card) => {
       card.style.background = "#f0f0f0";

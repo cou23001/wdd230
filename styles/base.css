@@ -74,7 +74,6 @@ nav ul li a {
 .bullets a {
     color: black;
     text-decoration: none;
-
 }
 .navlink {
     background-color: #001c3d;
@@ -234,4 +233,9 @@ main {
 	font-weight: 700;
 	font-size: 2rem;
 	font-family:"Great Vibes", serif;
+}
+.paint {
+    color:red;
+    font-size: 1rem;
+    font-family:"Great Vibes", serif;
 }

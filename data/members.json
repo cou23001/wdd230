@@ -1,0 +1,117 @@
+{
+    "members": [
+      {
+        "firstName": "Juan",
+        "lastName": "Doe",
+        "organization": "ABC Company",
+        "address": "Calle Principal 123",
+        "city": "Tuxtla Gutierrez",
+        "state": "Chiapas",
+        "postalCode": "12345",
+        "country": "Mexico",
+        "phone": "+52 123-456-7890",
+        "website": "https://www.abc-company.mx",
+        "image": "abc-company.png",
+        "membershipLevel": "Silver"
+      },
+      {
+        "firstName": "Maria",
+        "lastName": "Smith",
+        "organization": "XYZ Corporation",
+        "address": "Avenida Elm 456",
+        "city": "Tuxtla Gutierrez",
+        "state": "Chiapas",
+        "postalCode": "56789",
+        "country": "Mexico",
+        "phone": "+52 987-654-3210",
+        "website": "https://www.xyz-corporation.mx",
+        "image": "xyz-corp.png",
+        "membershipLevel": "Gold"
+      },
+      {
+        "firstName": "Luisa",
+        "lastName": "Johnson",
+        "organization": "123 Enterprises",
+        "address": "Calle Roble 789",
+        "city": "Tuxtla Gutierrez",
+        "state": "Chiapas",
+        "postalCode": "98765",
+        "country": "Mexico",
+        "phone": "+52 555-123-4567",
+        "website": "https://www.123-enterprises.mx",
+        "image": "123-enterprises.png",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "firstName": "Pedro",
+        "lastName": "Anderson",
+        "organization": "PQR Ltd.",
+        "address": "Calle Arce 321",
+        "city": "Tuxtla Gutierrez",
+        "state": "Chiapas",
+        "postalCode": "54321",
+        "country": "Mexico",
+        "phone": "+52 999-888-7777",
+        "website": "https://www.pqr-ltd.mx",
+        "image": "pqr-logo.png",
+        "membershipLevel": "Gold"
+      },
+      {
+        "firstName": "Ana",
+        "lastName": "Davis",
+        "organization": "Sunshine Industries",
+        "address": "Boulevard Sunset 555",
+        "city": "Tuxtla Gutierrez",
+        "state": "Chiapas",
+        "postalCode": "24680",
+        "country": "Mexico",
+        "phone": "+52 111-222-3333",
+        "website": "https://www.sunshine-industries.mx",
+        "image": "sunshine-logo.png",
+        "membershipLevel": "Silver"
+      },
+      {
+        "firstName": "Miguel",
+        "lastName": "Clark",
+        "organization": "MegaMart",
+        "address": "Calle Mega 789",
+        "city": "Tuxtla Gutierrez",
+        "state": "Chiapas",
+        "postalCode": "13579",
+        "country": "Mexico",
+        "phone": "+52 777-888-9999",
+        "website": "https://www.megamart.mx",
+        "image": "megamart-icon.png",
+        "membershipLevel": "Gold"
+      },
+      {
+        "firstName": "Sofia",
+        "lastName": "Wilson",
+        "organization": "Global Solutions",
+        "address": "Calle Tecnologia 222",
+        "city": "Tuxtla Gutierrez",
+        "state": "Chiapas",
+        "postalCode": "86420",
+        "country": "Mexico",
+        "phone": "+52 444-555-6666",
+        "website": "https://www.globalsolution.com",
+        "image": "global-solutions.png",
+        "membershipLevel": "Silver"
+      },
+      {
+        "firstName": "David",
+        "lastName": "Lee",
+        "organization": "Silverline Services",
+        "address": "Calle Plata 777",
+        "city": "Tuxtla Gutierrez",
+        "state": "Chiapas",
+        "postalCode": "57291",
+        "country": "Mexico",
+        "phone": "+52 666-777-8888",
+        "website": "https://www.silverlines-services.com",
+        "image": "silverline-logo.png",
+        "membershipLevel": "NP"
+      }
+    ]    
+  }
+  

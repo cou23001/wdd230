@@ -1,19 +1,19 @@
-const linksURL = "http://127.0.0.1:5500/data/members.json";
+const linksURL = "https://cou23001.github.io/wdd230/data/members.json";
 const cardsContainer = document.querySelector('.cards');
 const toggleButton = document.getElementById('toggleButton');
+
 
 fetch(linksURL)
     .then(response => response.json())
     .then(data => displayMembers(data.members))
     .catch(error => console.log('Error:', error));
 
-function displayMembers(members) {
+    function displayMembers(members) {
     cardsContainer.innerHTML = '';
 
     members.forEach(member => {
         const card = document.createElement('div');
         card.classList.add('card', 'organization-info');
-        //card.classList.add('card');
 
         const name = document.createElement('h3');
         name.textContent = member.firstName + ' ' + member.lastName;
@@ -55,5 +55,4 @@ function displayMembers(members) {
 
 toggleButton.addEventListener('click', function() {
     cardsContainer.classList.toggle('list-view');
-    console.log("Help");
 });

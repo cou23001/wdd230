@@ -294,19 +294,17 @@ footer .social img {
   
 .block h2 {
     margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
 }
   
-.block img {
-    max-width: 100%;
+.column img {
+    width: 60%;
     margin-bottom: 10px;
 }
   
 .column img {
     max-width: 100%;
-}
-
-#bimg {
-    max-width: 40%; 
 }
 
 /* cal example */
@@ -315,6 +313,10 @@ footer .social img {
     margin: 30px auto 50px;
     display: flex;
     justify-content: center;  
+}
+
+.group img {
+    max-width: 70%;
 }
 
 input {
@@ -348,6 +350,11 @@ input[readonly] ~ label.input-label {
     padding: 10px;
     background-color: #004ba0;
     margin-top: 10px;
+}
+
+.sidebar h2 {
+    color: white;
+    font-size: 20px;
 }
 
 img {

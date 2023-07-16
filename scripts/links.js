@@ -15,7 +15,7 @@ function displayLearningActivities(links) {
 
         const listItem = document.createElement('li');
         listItem.textContent = `${week}: `;
-        console.log(listItem);
+        //console.log(listItem);
 
         linkItems.forEach((item, index) => {
             const url = item.url;

@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="stylesheet" type="text/css" href="styles/forecast.css">
+    <link rel="stylesheet" type="text/css" href="styles/spot.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
@@ -43,15 +45,51 @@
           <p>Empowering Businesses, Enriching Communities</p>
         </div>
     </div> 
-
-    <div class="image-grid">
-        <img src="images/demo1.png" alt="Image 1">
-        <img src="images/events.png" alt="Events">
-        <img src="images/weather.png" alt="Weather">
-        <img src="images/code.png" alt="Coding">
-        <img src="images/demo1.png" alt="Image 5">
-        <img src="images/transport.png" alt="Transport Company">
+    <div id="banner" class="banner">
+        <h3>Attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</h3>
+        <button id="closeBanner" class="close-banner">Close</button>
     </div>
+    <div class="image-grid">
+        <div class="spotlight-container">
+            <div class="spotlight-title">Spotlight</div>
+            <img src="" alt="Spotlight Image" class="spotlight-image">
+            <h3 class="spotlight-organization"></h3>
+            <p class="spotlight-phone"></p>
+            <p class="spotlight-location"></p>
+        </div>
+        <div class="spotlight-container">
+            <div class="spotlight-title">Spotlight</div>
+            <img src="" alt="Spotlight Image" class="spotlight-image">
+            <h3 class="spotlight-organization"></h3>
+            <p class="spotlight-phone"></p>
+            <p class="spotlight-location"></p>
+        </div>
+          
+        
+        <!-- <img src="images/weather.png" alt="Weather"> -->
+        <div class="weather-grid">
+            <div class="weather-title">Weather</div>
+            <div class="weather-content">
+                <!--<p class="alerts"> -->
+                    <img id="weather-icon" class="weather-icon-img" src="../images/transparente.png" alt="" width="60">
+                <!--</p> -->
+                <div class="weather-info">
+                    <div id="weather-only">
+                    </div>
+                    <div id="weather-desc">
+                    </div>
+                </div>      
+            </div>
+        </div>
+        <img src="images/code.png" alt="Coding">          
+        <img src="images/transport.png" alt="Transport Company">
+        <div class="forecast-container">
+            <div class="forecast-title">3 Day Forecast</div>
+            <div id="forecast-row" class="forecast-row"></div>
+        </div>
+        
+    </div>
+    
       
     <footer class="footer-container">
         <div class="footer-tcc">
@@ -68,6 +106,7 @@
             <p>Cesar A. Coutino</p>
             <p>WDD 230 Project</p>
             <p id="lastModified">Last modification</p>
+            <p id="visits"></p>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="fb icon">
@@ -81,7 +120,10 @@
             </div>
         </div>
     </footer>
-    <script src="scripts/getDate.js"></script>
+    <script src="../scripts/getDate.js"></script>
     <script src="scripts/burger.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/spot.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

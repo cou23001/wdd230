@@ -1,0 +1,58 @@
+.spotlight-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 5px;
+    background-color: rgb(236, 232, 232);
+    min-height: auto;
+  }
+  
+  .spotlight-title {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: start;
+    color: black;
+  }
+  
+  .spotlight-container .spotlight-image {
+    width: 20%;
+    height: auto;
+    margin: 0 auto 5px;
+  }
+  
+  .spotlight-organization {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    color: black;
+  }
+
+  .spotlight-phone {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    color: black;
+    padding: 0;
+  }
+  
+  .spotlight-location {
+    color: black;
+    margin: auto;
+    padding: 0;
+    padding-bottom: 10px;
+
+  }
+  
+  .organization-info .spotlight-organization p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-color);
+    padding: 1em;
+  }
+  
+  .organization-info p {
+    color: black;
+  }
+  

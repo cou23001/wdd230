@@ -10,14 +10,42 @@ document.addEventListener("DOMContentLoaded", function() {
   lastModifiedParagraph.innerHTML = 'Last modified: ' + document.lastModified;
 
 
-  // current visits
-  var currentVisits = localStorage.getItem('visits');
+// Print the messages in the sidebar
+var currentDate = new Date();
+var previousVisit = localStorage.getItem('visitDate');
 
-  if (currentVisits === null || currentVisits === undefined) {
-    currentVisits = 1;
-  } else {
-    currentVisits = parseInt(currentVisits, 10) + 1;
+if (previousVisit) {
+  var timeDiff = currentDate - new Date(previousVisit);
+  var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+  var messageElement = document.getElementById('message');
+  if (messageElement) {
+    if (daysDiff === 0) {
+      messageElement.textContent = "Back so soon! Awesome!";
+    } else {
+      var message = "You last visited " + daysDiff + " ";
+      message += daysDiff === 1 ? "day" : "days";
+      message += " ago.";
+      messageElement.textContent = message;
+    }
   }
+} else {
+  var welcomeMessageElement = document.getElementById('message');
+  if (welcomeMessageElement) {
+    welcomeMessageElement.textContent = "Welcome! Let us know if you have any questions.";
+  }
+}
+
+localStorage.setItem('visitDate', currentDate);
+
+// current visits
+var currentVisits = localStorage.getItem('visits');
+
+if (currentVisits === null || currentVisits === undefined) {
+  currentVisits = 1;
+} else {
+  currentVisits = parseInt(currentVisits, 10) + 1;
+}
 
   localStorage.setItem('visits', currentVisits);
   document.getElementById('visits').textContent = `Visits: ${currentVisits}`;

@@ -499,21 +499,39 @@ form label.top input:required:valid {
 }
   
 .membership-benefits {
-    padding: 40px;
+    padding: 30px;
     text-align: left;
 
 }
 
+.membership-benefits h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.membership-benefits h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: start;
+    color: black;
+    
+}
+
 .benul {
-    margin: 0;
+    margin: 25px;
     padding: 0;
     display: block;
     list-style-type: square;
+    color: black;
 }
 
 .benli {
     margin: 0;
+    color: black;
 }
+
+
+
 /* New Styles for Organization Info */
 
 .cards {

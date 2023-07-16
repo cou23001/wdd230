@@ -28,10 +28,6 @@
     ul {
       display: none; 
     }
-
-    .social {
-      display: none;
-    }
   
     nav ul.active {
       display: flex; 

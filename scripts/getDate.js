@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   localStorage.setItem('visits', currentVisits);
-  document.getElementById('visits').textContent = currentVisits;
+  document.getElementById('visits').textContent = `Visits: ${currentVisits}`;
 });
 
 const currentWeather = document.querySelector('#weather-only');

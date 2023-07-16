@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const spotlightOrganization = container.querySelector('.spotlight-organization');
             const spotlightLocation = container.querySelector('.spotlight-location');
             const spotlightPhone = container.querySelector('.spotlight-phone');
-            
 
             const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
             const spotlightMember = spotlightMembers[randomIndex];
@@ -38,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
             spotlightOrganization.innerHTML = `<a href="${spotlightMember.website}" target="_blank" style="color: black;">${spotlightMember.organization}</a>`;
             spotlightLocation.textContent = `${spotlightMember.city}, ${spotlightMember.state}, ${spotlightMember.country}`;
             spotlightPhone.textContent = spotlightMember.phone;
-            console.log(spotlightMember.phone);
           });
         } else {
           throw new Error("No spotlight members found.");
